@@ -4,6 +4,7 @@ import '../../../components/custom_surfix_icon.dart';
 import '../../../components/form_error.dart';
 import '../../../constants.dart';
 import '../../complete_profile/complete_profile_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class SignUpForm extends StatefulWidget {
   const SignUpForm({super.key});
@@ -137,11 +138,20 @@ class _SignUpFormState extends State<SignUpForm> {
           FormError(errors: errors),
           const SizedBox(height: 20),
           ElevatedButton(
-            onPressed: () {
+            onPressed: () async {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                // if all are valid then go to success screen
-                Navigator.pushNamed(context, CompleteProfileScreen.routeName);
+                try {
+                  await FirebaseAuth.instance
+                      .createUserWithEmailAndPassword(
+                          email: email!, password: password!);
+                  Navigator.pushNamed(
+                      context, CompleteProfileScreen.routeName);
+                } on FirebaseAuthException catch (e) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(e.message ?? 'Sign up failed')),
+                  );
+                }
               }
             },
             child: const Text("Continue"),

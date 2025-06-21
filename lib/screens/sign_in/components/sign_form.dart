@@ -6,6 +6,7 @@ import '../../../constants.dart';
 import '../../../helper/keyboard.dart';
 import '../../forgot_password/forgot_password_screen.dart';
 import '../../login_success/login_success_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class SignForm extends StatefulWidget {
   const SignForm({super.key});
@@ -131,12 +132,19 @@ class _SignFormState extends State<SignForm> {
           FormError(errors: errors),
           const SizedBox(height: 16),
           ElevatedButton(
-            onPressed: () {
+            onPressed: () async {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                // if all are valid then go to success screen
-                KeyboardUtil.hideKeyboard(context);
-                Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                try {
+                  await FirebaseAuth.instance.signInWithEmailAndPassword(
+                      email: email!, password: password!);
+                  KeyboardUtil.hideKeyboard(context);
+                  Navigator.pushNamed(context, LoginSuccessScreen.routeName);
+                } on FirebaseAuthException catch (e) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(e.message ?? 'Sign in failed')),
+                  );
+                }
               }
             },
             child: const Text("Continue"),
