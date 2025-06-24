@@ -1,0 +1,354 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Ptc Sweet Powder Cat Climbing Frame 47x40x108cm",
+        "description": "- Color: Purple\n- Size Measurement: 47x40x108CM\n- Weight: 7.6kg\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_use_6 (1).jpg",
+          "assets/images/cat_use_6 (2).jpg"
+        ],
+        "rating": 4.7,
+        "price": 143.2,
+        "isFavourite": true,
+        "isPopular": true
+      },
+      {
+        "id": 2,
+        "title": "Royal Canin Medium Adult 10kg Dry Dog Food ",
+        "description": "Royal Canin Size Health Nutrition Medium Adult Dry Dog Food For adult medium breed dogs (from 11 to 25 kg) - From 12 months to 7 years old.\n**NATURAL DEFENCES**\nHelps support your dog's natural defences, thanks particularly to an antioxidant complex and manno-oligo-saccharides.\n\n**HIGH DIGESTIBILITY**\nHelps promote optimal digestibility thanks to an exclusive formula including very high quality protein and a balanced supply of dietary fibre.\n\n**OMEGA 3: EPA - DHA**\nEnriched formula with omega-3 fatty acids (EPA-DHA) to help maintain healthy skin.\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_food_3 (1).jpg",
+          "assets/images/dog_food_3 (1).png",
+          "assets/images/dog_food_3 (2).jpg",
+          "assets/images/dog_food_3 (3).jpg"
+        ],
+        "rating": 4.5,
+        "price": 225.1,
+        "isFavourite": true,
+        "isPopular": true
+      },
+      {
+        "id": 3,
+        "title": "Rich Choice Holistic 1.5kg Oven Baked Gastrointestinal Care Dry Cat Food",
+        "description": "The Holistic Oven-Baked Cat Food series is artfully crafted through an innovative low-temperature baking process. It is important to offer the best for our pets, and that's why our baking method takes centre stage. Baking cat food preserves the integrity of natural ingredients, locking in essential nutrients and flavours while avoiding the high temperatures and additives associated with traditional extrusion. This results in cat food that's delicious and highly digestible, promoting overall well-being. We aim to elevate your cat's dining experience and support their health, which in line with Rich Choice's mission which is to deliver your pets with the finest, most nutritious food they deserve to have.\n\nRichChoice Holistic Oven-Baked Cat Food is formulated to meet the nutritional levels established by the AAFCO (Association of American Feed Control Officials) Cat Food Nutrient Profiles for all life stages.\n\n**Benefits:**\n- Low Temperature Prepared - Baked at 75 celcius - 90 celcius to retain nutrition\n- High Fresh Meat Recipe - 90% fresh meat source without filters\n- Grain & Gluten Free - Made with fresh meat and vegertables without addition of grains\n- Highly Digestible Kibble - Gentle for cats with sensitive stomach\n- MOS for Digestive Regularity - Regulate digestive process & reduce digestive upsets\n- Hypoallergenic/Novel protein - Reduce chance of sensitivity\n\n**Ingredients:**\nFresh Duck Meat, Fresh Duck Liver, Deboned Duck Meat, Tapioca, Fresh Quaill Meat, Sweet Potato, Chicken Liver, Animal Fat (Preserved with Mixed Tocopherols), Brewer's Dried Yeast, Kelp Powder, Psyllium Husk, Egg Yolk Powder, Pumpkin, Mannan Oligosaccharides, L-Lysine, DL-Methionine, Taurine, Rosemary Extract, Vitamins Premix, Macro and Trace Minerals Premix.\n\n**Guaranteed Analysis:**\nCrude Protein (Min) - 45%\nCrude Fat (Min) - 22%\nCrude Ash (Max) - 8%\nCalcium (Min) - 1.0%\nPhosphorus (Min) - 0.5%\nL-lysine (Min) - 1.5%\nMoisture (Max) - 7%\nWater Soluble Chloride - 0.35%\nMetabolized Energy - 3595 kcal/kg\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_food_4.png"
+        ],
+        "rating": 4.9,
+        "price": 73,
+        "isFavourite": true,
+        "isPopular": true
+      },
+      {
+        "id": 4,
+        "title": "Rich Choice Holistic Dry Cat Food",
+        "description": "**Benefits:**\n- Increased fibre content, dried sugar beet pulp and psyllium: Assist the natural excrement of swallowed hair.\n- Brilliant glossy coat and healthy skin: Through adjusted protein content as well as vitamins (A and B), essential fatty acids and chelated trace elements.\n- Maximum digestion and reduced excremental odour: Through highly digestible protein with higher nutritional value.\n- Appropriate mineral content: Promotes healthy digestion, and a pH level between 6.0–6.5.\n\n**Ingredients:**\nTurkey, salmon, freeze dried quail egg yolk, turkey and salmon meat protein isolate, salmon oil (preserved with mixed tocopherols), peas fiber, dried plain beet pulp, psyllium seed husk, dried kelp, flaxseed, tomato pomace, dried blueberries, dried cranberries, choline chloride, dried apples, dried carrots, dried spinach, avocado, sweet potatoes, natural flavors, pea fiber, potassium chloride, taurine, L-lysine, DL-methionine, calcium sulfate, L-carnitine, beta carotene, vitamin A, D, E, C, B1, D3 supplement, yucca schidigera extract, rosemary extract, dried enterococcus faecium fermentation product, dried lactobacillus casei fermentation product, dried lactobacillus acidophilus fermentation product.\n\n**Guaranteed Analysis:**\n- Crude Protein (min): 34.0%  \n- Crude Fat (min): 13.0%  \n- Crude Fibre (max): 5.0%  \n- Ash (max): 7.5%  \n- Moisture (max): 10.0%  \n- Calcium (min): 0.46%\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_food_1.png",
+          "assets/images/cat_food_1.1.png",
+          "assets/images/cat_food_1.2.png"
+        ],
+        "rating": 4.1,
+        "price": 52,
+        "isFavourite": true,
+        "isPopular": true
+      },
+      {
+        "id": 5,
+        "title": "Sheba 85g Wet Canned Cat Food",
+        "description": "**features:**\n- from the first purr of anticipation, it’s easy to see the difference this makes. \n\n- sheba® meals have pieces of real meat and fish, delicate sauces, and unique combinations of flavors. \n\n- the wide variety of gourmet tastes and textures also come in a range of different packs to suit your cat’s appetite and your lifestyle.\n\n- sheba® are sure your cat will love these products.\n\n**flavour available:**\n\ntuna & salmon in gravy\n\ningredients: tuna, whitefish, salmon, thickening agents, water\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \n\nsucculent chicken breast\n\ningredients: chicken breast, thickening agents (modified starch, guar gum)\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \n\ntuna & snapper in gravy \n\ningredients: tuna, whitefish, snapper, thickening agents, water\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \n\ntender chicken fine flake\n\ningredients: chicken breast, thickening agents (modified starch, guat gum), vitamin e\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \n\nsucculent chicken breast with salmon\n\ningredients: chicken breast, salmon, thickening agents(modified starch, guar gum)\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \nsucculent chicken breast with prawn\n\ningredients: chicken breast, prawn, thickening agents(modified starch, guar gum)\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \n\ntuna with shredded crab\n\ningredients: tuna, whitefish, crab, thickening agents, water\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \n\nflake tuna in gravy\n\ningredients: tuna, whitefish, thickening agents, water\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n\n \n\ntuna fillet in jelly\n\ningredients: tuna, whitefish, gelling agents, water\n\nguaranteed analysis: protein min. 9% fat min. 0.2% moisture max. 90% ash max. 3% fiber max. 0.5%\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_food_2.png",
+          "assets/images/cat_food_2.1.png",
+          "assets/images/cat_food_2.2.png"
+        ],
+        "rating": 4.8,
+        "price": 4.1,
+        "isFavourite": true,
+        "isPopular": true
+      },
+      {
+        "id": 6,
+        "title": "Purina One 70g Wet Cat Pouch",
+        "description": "formulated To Provide A 100% Complete And Balanced Nutrition With All The Key Ingredients For A Holistically-positive Feeding Experience, The New Purina One Wet Food Range Provides Your Cat With The Vital Nutrition They Need, In A Taste That They’ll Love.\n**available In 5 Variants:**\n- purina One® Healthy Kitten With Chicken Wet Cat Food\n- purina One® Healthy Adult With Ocean Fish Wet Cat Food\n- purina One® Adult Indoor Advantage With Chicken Wet Cat Food\n- purina One® Adult Urinary Care With Chicken Wet Cat Food\n- purina One® Adult Hairball Control With Chicken Wet Cat Food\n\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_use_1.png",
+          "assets/images/cat_use_1.1.png"
+        ],
+        "rating": 4,
+        "price": 3.61,
+        "isFavourite": true,
+        "isPopular": true
+      },
+      {
+        "id": 7,
+        "title": "Ptc Cat Wand Ball Random Colour",
+        "description": "Length: 40CM\nColors: giving randomly\n\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_use_2.png"
+        ],
+        "rating": 4.3,
+        "price": 4.72,
+        "isFavourite": true,
+        "isPopular": true
+      },
+      {
+        "id": 8,
+        "title": "Ptc Cat Litter Scoop Set Green ",
+        "description": "- Cat litter scoop set\n- 8mm gap\n- Rapid sand leakage\n- Easily shoveled\n- Suitable for all types of cat litter\n- Size parameters: 8x12x26cm\n- 230G\n- Material: HIPS\n- Color: Green\n\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_use_3.png",
+          "assets/images/cat_use_3.1.png"
+        ],
+        "rating": 4.6,
+        "price": 15.92,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 9,
+        "title": "Neu Zea Organic Milk Probiotic & Prebiotics 1.5kg ",
+        "description": "Neu Zea is a milk replacer for orphanage puppies and kittens and also for those that don't get sufficient milk supply from their mother.\n\n- Neu Zea contains low in lactose while still maintain a balanced composition of nutrients to meet the nutritional needs of young and active animals. It contains all the protein, fats, carbohydrates, vitamins, minerals and amino acids that puppies and kittens need for optimal growth.\n\n",
+        "category": "cat",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/cat_food_3.png"
+        ],
+        "rating": 4.9,
+        "price": 90.16,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 10,
+        "title": "Catit Voyageur Cherry Red/grey Medium",
+        "description": "**Durable, sturdy and safe cat carrier**\n- Easy to assemble thanks to side latch system\n- Meets airline regulations\n- Small: 48.3 L x 32.6 W x 28 H cm (19 x 12.8 x 11 in)\n",
+        "category": "cat",
+        "colors": [
+          4294198070
+        ],
+        "images": [
+          "assets/images/cat_use_4.png"
+        ],
+        "rating": 4.4,
+        "price": 61.2,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 10,
+        "title": "Catit Senses 2.0 Self Groomer",
+        "description": "**Grooming made easy!**\n\nProvide your cat with a constant source of grooming pleasure with this self-groomer. Simply attach the brush to a surface at your cat’s height and that’s it!\n- Helps remove and collect loose hair\n- Easy to mount on flat walls or cornered surfaces (adhesive strips included)\n- Insert catnip (sample included) to stimulate your cat\n- Easy to disassemble and clean\n- Made of BPA-Free Materials\n",
+        "category": "cat",
+        "colors": [
+          4278190080
+        ],
+        "images": [
+          "assets/images/cat_use_5.png"
+        ],
+        "rating": 3.2,
+        "price": 8.91,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 11,
+        "title": "Cesar Pouch 70g Wet Dog Food",
+        "description": "**available Flavor:**\n1. Cesar Pouch 70g Chicken With Surimi & Vegetable In Jelly Wet Dog Food\n\ningredients: Water, Chicken, Vegetables, Surimi, Minerals, Gelling Agents, Wheat Flour.\n\nguaranteed Analysis: Crude Protein (min): 7.5%, Crude Fat (min): 0.3%, Crude Fibre (max):0.5%, Moisture (max): 90%.\n\n\n2. Cesar Pouch 70g Chicken Meat With Carrot And Pumpkin Flavour In Jelly Wet Dog Food\n\ningredients: Water, Chicken, Vegetables, Minerals, Gelling Agents, Wheat Flour.\n\nguaranteed Analysis: Crude Protein (min): 7.5%, Crude Fat (min): 0.3%, Crude Fibre (max 0.5%, Moisture (max): 90%.\n\n\n3. Cesar Pouch 70g Beef Flavor With Vegetables In Gravy Wet Dog Food\n\ningredients: Water, Meat And Meat By Products (beef), Vegetables, Modified Tapioca Starch, Amino Acid, Minerals, Gelling Agents, Flavour, Sodium Nitrite.\n\nguaranteed Analysis: Crude Protein (min 6%, Crude Fat (min): 4%, Crude Fibre (max): 0.5%, Moisture (max): 89%.\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_food_1 (1).jpg",
+          "assets/images/dog_food_1 (2).jpg",
+          "assets/images/dog_food_1 (3).jpg"
+        ],
+        "rating": 3.9,
+        "price": 2.76,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 12,
+        "title": "Triple Crown Dog Sensitive Dry Dog Food",
+        "description": "**the Best Triple Crown Feed For Dogs With Sensitive Digestions**\nthe Balance Of Its Formula Provides A complete Nutrition That Contributes To A Healthy Body Condition , Making Triple Crown Salmon A Suitable Product To Meet All The Daily Nutritional Needs Of Your Adult Dog. Contains High Quality Ingredients And High Levels Of Animal Protein. fresh Salmon Offers Highly Digestible Nutrition , Even For The Most Sensitive Dogs.\n\n**recommended Daily Ration In (gram)**\n\ndog's Weight (kg)\tfeeding Guide (gram/day)\n1-5\t30-99g / Day\n10-15\t167-227g / Day\n20-25\t281-332g / Day\n30-40\t381-473g / Day\n>60\t641g / Day\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_food_2.png"
+        ],
+        "rating": 3.2,
+        "price": 63.66,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 13,
+        "title": "Fofos Male Dog Diaper S 12pcs Waist 19-37cm Weight 2-5kg",
+        "description": "- wetness Indicator\n- Leak proof protection\n- 2x Odor control\n- Fur friendly fasteners\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_1.jpg"
+        ],
+        "rating": 4.9,
+        "price": 23.8,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 14,
+        "title": "Fofos Female Dog Diaper S 18pcs Waist 20-25cm Weight 1.5-3kg",
+        "description": "If you're looking for a female dog diaper that's both absorbent and comfortable, look no further than Fofos! Our diapers are designed to fit snugly around your dog's waist and provide maximum protection against leaks. Plus, they're super easy to put on and take off - perfect for busy pet parents!\nWetness Indicator\n- Leak Proof Protection\n- 2x Odor control\n- Fur friendly Fasteners\n- A cutout in the back for the tail to sway wonderfully\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_2.jpg"
+        ],
+        "rating": 4.7,
+        "price": 25.92,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 15,
+        "title": "Le Salon Essential Dog Self-cleaning Slicker Brush Large",
+        "description": "Le Salon Essentials Grooming Products offer a full range of grooming tools and accessories. Choose from a wide assortment of brushes, combs and grooming accessories in a variety of styles and sizes.\n- Regular grooming is recommended for every pet to ensure a healthy and trouble-free coat.\n- Le Salon Essentials Dog Slicker Brush, Large. Angled wire bristles, gray pad, red handle.\n- Recommended for the general grooming of most breeds; removes dead hair; helps prevent matting.\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_3 (1).jpg",
+          "assets/images/dog_use_3 (2).jpg"
+        ],
+        "rating": 4.2,
+        "price": 29.7,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 16,
+        "title": "Australian Pet Organics Pure Grass Fed Bovine Collagen Powder 220g Meal Topper",
+        "description": "Made with Our SUPAW Potent Blend of Enriched Bone Broth and Green Mussels. All Natural and Certified Organic with No Artificial Colours or Preservatives, Wheat or Soy.\n- Scientifically Proven\n- For All Life Stages\n- Pre-Tested On Humans \n- Recycled Plastic\n- 20% Goes To Rescue Dogs\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_4.png"
+        ],
+        "rating": 4.8,
+        "price": 200,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 17,
+        "title": "Zeus Dog Adjustable Collar Large Tangerine 2x36cm - 55cm",
+        "description": "The Zeus line of dog collars, leashes, and harnesses offer a complete range of products in classic and fashion-fresh colors for everyday walks and for basic training needs. Zeus Adjustable Nylon Dog Collars feature SMART collar construction, making them stronger than conventional collars with plastic buckles.\nWith our SMART collar construction, the plastic buckle loops through the metal o-ring leash attachment. When the dog pulls on the leash, the pressure is applied to the metal o-ring of the collar, relieving the stress on the buckle.\n\nSIZE\nSMALL: 1 cm x 22 cm-30 cm (3/8\" x 9\"-12\")\nMEDIUM: 1.5 cm x 28 cm-40 cm (1/2\" x 11\"-16\")\nLARGE: 2 cm x 36 cm-55 cm (3/4\" x 14\"-22\")\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_5.png"
+        ],
+        "rating": 4.9,
+        "price": 13.95,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 18,
+        "title": "Aduck Spherical Molars Pet Food Leaking Ball 7cm",
+        "description": "Aduck Spherical Molars Pet Food Leaking Ball 5cm Orange\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_6 (1).jpg",
+          "assets/images/dog_use_6 (2).jpg"
+        ],
+        "rating": 4.1,
+        "price": 13.51,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 19,
+        "title": "Ptc Bone Type Slow Feeding Bowl Blue 20x20x4.5cm",
+        "description": "- Item Size: 20x20x4.5cm *Reference Only*\n- Color: Blue\n- Bone Design\n- Helps to slow down pet eating to avoid choking\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_7.jpg"
+        ],
+        "rating": 4.3,
+        "price": 12.72,
+        "isFavourite": true,
+        "isPopular": false
+      },
+      {
+        "id": 19,
+        "title": "Ptc Outdoor Feeding Bottle 350ml & 200ml Purple",
+        "description": "Ptc Outdoor Feeding Bottle 350ml & 200ml Purple\n",
+        "category": "dog",
+        "colors": [
+          4294967295
+        ],
+        "images": [
+          "assets/images/dog_use_8.jpg"
+        ],
+        "rating": 4.9,
+        "price": 23.9,
+        "isFavourite": true,
+        "isPopular": false
+      }
+    ]
+  }

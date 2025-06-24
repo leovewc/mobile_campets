@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "195226807523",
+    "firebase_url": "https://campets-a3bdf-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "campets-a3bdf",
+    "storage_bucket": "campets-a3bdf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195226807523:android:8bd497690ac13ce575a9d6",
+        "android_client_info": {
+          "package_name": "com.example.new_campets"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbqwC3Qa66GC8HVBGgN2JIqBBCy5DHrl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
