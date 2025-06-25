@@ -28,18 +28,13 @@ class CartCard extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           child: Row(
             children: [
-              // 图片 - 确保有固定尺寸
+              // 图片 - 支持本地 asset 或网络
               SizedBox(
                 width: 80,
                 height: 80,
                 child: product.images.isNotEmpty
-                    ? Image.network(
-                        product.images.first,
-                        fit: BoxFit.cover,
-                        errorBuilder: (_, __, ___) => 
-                            const Icon(Icons.broken_image),
-                      )
-                    : const Icon(Icons.image),
+                    ? _buildImage(product.images.first)
+                    : const Icon(Icons.image, size: 40),
               ),
               const SizedBox(width: 12),
 
@@ -107,6 +102,20 @@ class CartCard extends StatelessWidget {
           onPressed: () => onQuantityChanged(quantity + 1),
         ),
       ],
+    );
+  }
+
+  Widget _buildImage(String path) {
+    if (path.startsWith('http')) {
+      return Image.network(
+        path,
+        fit: BoxFit.cover,
+        errorBuilder: (_, __, ___) => const Icon(Icons.broken_image),
+      );
+    }
+    return Image.asset(
+      path,
+      fit: BoxFit.cover,
     );
   }
 }
