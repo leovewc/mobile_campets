@@ -20,7 +20,31 @@ class FavoriteScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Favorites"),
+        title: Column(
+          children: [
+            const Text(
+              "My Favorites",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Color(0xFFFF7643),
+                fontFamily: 'Muli',
+              ),
+            ),
+            Container(
+              width: 480,
+              height: 0.8,
+              margin: const EdgeInsets.only(top: 12),
+              decoration: const BoxDecoration(
+                color: Color(0xFFFF7643),
+                borderRadius: BorderRadius.all(Radius.circular(1)),
+              ),
+            ),
+          ],
+        ),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        toolbarHeight: 80,
       ),
       body: StreamBuilder<DocumentSnapshot>(
         stream: userRef.snapshots(),
