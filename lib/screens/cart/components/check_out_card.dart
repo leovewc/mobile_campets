@@ -138,7 +138,7 @@ class _CheckoutCardState extends State<CheckoutCard> {
                 maxWidth: constraints.maxWidth * 0.6,
               ),
               child: Text(
-                'Total: \$${_total.toStringAsFixed(2)}',
+                'Total: RM${_total.toStringAsFixed(2)}',
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,

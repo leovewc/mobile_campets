@@ -55,7 +55,7 @@ class CartCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      '\$${product.price.toStringAsFixed(2)} × $quantity = \$${subtotal.toStringAsFixed(2)}',
+                      'RM${product.price.toStringAsFixed(2)} × $quantity = RM${subtotal.toStringAsFixed(2)}',
                       style: const TextStyle(fontSize: 14),
                     ),
                     const SizedBox(height: 8),

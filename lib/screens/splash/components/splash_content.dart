@@ -35,8 +35,8 @@ class _SplashContentState extends State<SplashContent> {
         const Spacer(flex: 2),
         Image.asset(
           widget.image!,
-          height: 265,
-          width: 235,
+          height: 320,
+          width: 280,
         ),
       ],
     );

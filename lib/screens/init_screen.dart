@@ -4,7 +4,7 @@ import 'package:campets/constants.dart';
 import 'package:campets/screens/favorite/favorite_screen.dart';
 import 'package:campets/screens/home/home_screen.dart';
 import 'package:campets/screens/profile/profile_screen.dart';
-import 'package:campets/screens/chat/chat_screen.dart'; 
+import 'package:campets/screens/animal_showcase/animal_showcase_screen.dart'; 
 
 const Color inActiveIconColor = Color(0xFFB6B6B6);
 
@@ -29,7 +29,7 @@ class _InitScreenState extends State<InitScreen> {
   final pages = [
     const HomeScreen(),
     const FavoriteScreen(),
-    const ChatScreen(), 
+    AnimalShowcaseScreen(),
     const ProfileScreen()
   ];
 
@@ -80,20 +80,20 @@ class _InitScreenState extends State<InitScreen> {
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              "assets/icons/Chat bubble Icon.svg",
+              "assets/icons/paw-print (1).svg",
               colorFilter: const ColorFilter.mode(
                 inActiveIconColor,
                 BlendMode.srcIn,
               ),
             ),
             activeIcon: SvgPicture.asset(
-              "assets/icons/Chat bubble Icon.svg",
+              "assets/icons/paw-print (1).svg",
               colorFilter: const ColorFilter.mode(
                 kPrimaryColor,
                 BlendMode.srcIn,
               ),
             ),
-            label: "Chat",
+            label: "Pets",
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(

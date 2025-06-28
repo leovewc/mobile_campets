@@ -1,3 +1,4 @@
+import 'package:campets/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:campets/screens/init_screen.dart';
 
@@ -10,22 +11,22 @@ class LoginSuccessScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const SizedBox(),
-        title: const Text("Login Success"),
+        title: const Text("  "),
       ),
       body: Column(
         children: [
-          const SizedBox(height: 16),
+          const SizedBox(height: 102),
           Image.asset(
-            "assets/images/success.png",
+            "assets/images/success_1.png",
             height: MediaQuery.of(context).size.height * 0.4, //40%
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 48),
           const Text(
-            "Login Success",
+            "Login Success!",
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
-              color: Colors.black,
+              color: kPrimaryColor,
             ),
           ),
           const Spacer(),
