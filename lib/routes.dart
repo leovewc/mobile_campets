@@ -21,6 +21,13 @@ import 'screens/profile/setting_screen.dart';
 import 'screens/checkout/payment.dart';
 import 'screens/forgot_password/reset_password.dart';
 import 'screens/adoption/adoption_form_screen.dart';
+import 'screens/help_center/question_defect_detail.dart';
+import 'screens/help_center/request_invoice_detail.dart';
+import 'screens/help_center/return_request_detail.dart';
+import 'screens/help_center/delivered_no_goods_detail.dart';
+import 'screens/help_center/logistics_status_detail.dart';
+import 'screens/help_center/return_policy_detail.dart';
+import 'screens/help_center/return_exchange_status_detail.dart';
 // We use name route
 // All our routes will be available here
 final Map<String, WidgetBuilder> routes = {
@@ -45,5 +52,12 @@ final Map<String, WidgetBuilder> routes = {
   PaymentOptionPage.routeName: (context) => const PaymentOptionPage(),
   ResetPasswordScreen.routeName: (context) => const ResetPasswordScreen(),
   AdoptionFormScreen.routeName: (context) => const AdoptionFormScreen(petName: ""),
+  QuestionDefectDetailScreen.routeName: (context) => const QuestionDefectDetailScreen(),
+  RequestInvoiceDetailScreen.routeName: (context) => const RequestInvoiceDetailScreen(),
+  ReturnRequestDetailScreen.routeName: (context) => const ReturnRequestDetailScreen(),
+  DeliveredNoGoodsDetailScreen.routeName: (context) => const DeliveredNoGoodsDetailScreen(),
+  LogisticsStatusDetailScreen.routeName: (context) => const LogisticsStatusDetailScreen(),
+  ReturnPolicyDetailScreen.routeName: (context) => const ReturnPolicyDetailScreen(),
+  ReturnExchangeStatusDetailScreen.routeName: (context) => const ReturnExchangeStatusDetailScreen(),
 };
 

@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import '../help_center/question_defect_detail.dart';
+import '../help_center/request_invoice_detail.dart';
+import '../help_center/return_request_detail.dart';
+import '../help_center/delivered_no_goods_detail.dart';
+import '../help_center/logistics_status_detail.dart';
+import '../help_center/return_policy_detail.dart';
+import '../help_center/return_exchange_status_detail.dart';
 
 class HelpCenterScreen extends StatelessWidget {
   static String routeName = "/help_center";
@@ -9,7 +16,14 @@ class HelpCenterScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Notifications"),
+        title: const Text(
+          "Help Center",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.normal,
+            fontSize: 20,
+          ),
+        ),
         elevation: 0,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
@@ -24,6 +38,7 @@ class HelpCenterScreen extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.transparent,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -65,7 +80,23 @@ class HelpCenterScreen extends StatelessWidget {
                 ListTile(
                   title: Text(q),
                   trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-                  onTap: () {}, // Placeholder for future routing
+                  onTap: () {
+                    if (q == "What should I do if the goods received have any defects?") {
+                      Navigator.pushNamed(context, QuestionDefectDetailScreen.routeName);
+                    } else if (q == "Request for invoice") {
+                      Navigator.pushNamed(context, RequestInvoiceDetailScreen.routeName);
+                    } else if (q == "A return request") {
+                      Navigator.pushNamed(context, ReturnRequestDetailScreen.routeName);
+                    } else if (q == "Why would it show as delivered if no goods were received?") {
+                      Navigator.pushNamed(context, DeliveredNoGoodsDetailScreen.routeName);
+                    } else if (q == "Inquire about the logistics status") {
+                      Navigator.pushNamed(context, LogisticsStatusDetailScreen.routeName);
+                    } else if (q == "Inquire about the return policy") {
+                      Navigator.pushNamed(context, ReturnPolicyDetailScreen.routeName);
+                    } else if (q == "Inquire about the status of return and exchange") {
+                      Navigator.pushNamed(context, ReturnExchangeStatusDetailScreen.routeName);
+                    }
+                  },
                 ),
                 const Divider(),
               ],

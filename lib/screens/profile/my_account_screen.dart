@@ -168,7 +168,14 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Notifications"),
+        title: const Text(
+          "My Account",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.normal,
+            fontSize: 20,
+          ),
+        ),
         elevation: 0,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
@@ -183,6 +190,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
           ),
         ),
         backgroundColor: Colors.transparent,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
@@ -192,7 +200,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
               child: CircleAvatar(
                 radius: 50,
                 backgroundImage:
-                    AssetImage("assets/images/Profile Image.png"),
+                    AssetImage("assets/images/Profile_Cat.png"),
               ),
             ),
             const SizedBox(height: 20),
