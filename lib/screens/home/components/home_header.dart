@@ -5,6 +5,9 @@ import 'icon_btn_with_counter.dart';
 import 'search_field.dart';
 import '../../profile/notification.dart';
 import 'package:campets/screens/products/products_screen.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 // class HomeHeader extends StatelessWidget {
 //   const HomeHeader({
 //     Key? key,
@@ -64,11 +67,26 @@ class HomeHeader extends StatelessWidget {
             press: () => Navigator.pushNamed(context, "/cart"),
           ),
           const SizedBox(width: 8),
-          IconBtnWithCounter(
-            svgSrc: "assets/icons/Bell.svg",
-            numOfitem: 3,
-            press: () => Navigator.pushNamed(context, "/notifications"),
-          ),
+          StreamBuilder<QuerySnapshot>(
+          stream: FirebaseFirestore.instance
+              .collection('users')
+              .doc(FirebaseAuth.instance.currentUser!.uid)
+              .collection('notifications')
+              .where('isRead', isEqualTo: false)
+              .snapshots(),
+          builder: (context, snapshot) {
+            int count = 0;
+            if (snapshot.hasData) {
+              count = snapshot.data!.docs.length;
+            }
+
+            return IconBtnWithCounter(
+              svgSrc: "assets/icons/Bell.svg",
+              numOfitem: count > 99 ? 99 : count,
+              press: () => Navigator.pushNamed(context, NotificationScreen.routeName),
+            );
+          },
+        ),
         ],
       ),
     );

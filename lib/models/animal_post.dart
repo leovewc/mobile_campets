@@ -30,4 +30,21 @@ class AnimalPost {
     required this.coverPath,
     this.likes = 0,
   });
+
+  Map<String, dynamic> toJson() {
+  return {
+    'id': id,
+    'name': species, // name 字段写入 species
+    'age': age,
+    'gender': gender,
+    'medicalHistory': medicalHistory,
+    'region': region,
+    'description': description,
+    'status': status.name, // AnimalStatus 枚举转字符串
+    'adoptionRequirement': adoptionRequirement,
+    'videoPath': videoPath,
+    'coverPath': coverPath,
+    'likes': likes,
+  };
+}
 } 

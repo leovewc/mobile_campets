@@ -19,6 +19,8 @@ import 'screens/profile/my_account_screen.dart';
 import 'screens/profile/notification.dart';
 import 'screens/profile/setting_screen.dart';
 import 'screens/checkout/payment.dart';
+import 'screens/forgot_password/reset_password.dart';
+import 'screens/adoption/adoption_form_screen.dart';
 // We use name route
 // All our routes will be available here
 final Map<String, WidgetBuilder> routes = {
@@ -41,5 +43,7 @@ final Map<String, WidgetBuilder> routes = {
   HelpCenterScreen.routeName: (context) => const HelpCenterScreen(),
   ProductsScreen.routeName: (context) => const ProductsScreen(),
   PaymentOptionPage.routeName: (context) => const PaymentOptionPage(),
+  ResetPasswordScreen.routeName: (context) => const ResetPasswordScreen(),
+  AdoptionFormScreen.routeName: (context) => const AdoptionFormScreen(petName: ""),
 };
 

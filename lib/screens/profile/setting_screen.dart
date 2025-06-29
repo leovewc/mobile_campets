@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import '../../constants.dart';
 import '../../components/showConfirmationDialog.dart';
+
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class SettingsScreen extends StatelessWidget {
   static String routeName = "/settings";
 
@@ -10,7 +14,7 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Notifications"),
+        title: const Text("Setting"),
         elevation: 0,
         flexibleSpace: Container(
           decoration: const BoxDecoration(
@@ -29,9 +33,9 @@ class SettingsScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: const [
-          SettingSectionTitle(title: "Mode Switch"),
-          ModeSwitchTile(),
-          SizedBox(height: 24),
+          // SettingSectionTitle(title: "Mode Switch"),
+          // ModeSwitchTile(),
+          // SizedBox(height: 24),
           SettingSectionTitle(title: "Payment Settings"),
           PaymentSwitchTile(),
           SizedBox(height: 24),
@@ -67,41 +71,41 @@ class SettingSectionTitle extends StatelessWidget {
   }
 }
 
-class ModeSwitchTile extends StatefulWidget {
-  const ModeSwitchTile({super.key});
+// class ModeSwitchTile extends StatefulWidget {
+//   const ModeSwitchTile({super.key});
 
-  @override
-  State<ModeSwitchTile> createState() => _ModeSwitchTileState();
-}
+//   @override
+//   State<ModeSwitchTile> createState() => _ModeSwitchTileState();
+// }
 
-class _ModeSwitchTileState extends State<ModeSwitchTile> {
-  int _selectedMode = 0;
-  final List<String> modes = ["Standard Mode", "Elderly Mode", "Child Mode"];
+// class _ModeSwitchTileState extends State<ModeSwitchTile> {
+//   int _selectedMode = 0;
+//   final List<String> modes = ["Standard Mode", "Elderly Mode", "Child Mode"];
 
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: List.generate(modes.length, (index) {
-        return RadioListTile<int>(
-          value: index,
-          groupValue: _selectedMode,
-          activeColor: Color(0xFFFF7643),
-          title: Text(modes[index]),
-          subtitle: index == 0
-              ? const Text("Rich in information and comprehensive in function")
-              : index == 1
-              ? const Text("Large characters and simple operations")
-              : const Text("Selected content and time control"),
-          onChanged: (value) {
-            setState(() {
-              _selectedMode = value!;
-            });
-          },
-        );
-      }),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Column(
+//       children: List.generate(modes.length, (index) {
+//         return RadioListTile<int>(
+//           value: index,
+//           groupValue: _selectedMode,
+//           activeColor: Color(0xFFFF7643),
+//           title: Text(modes[index]),
+//           subtitle: index == 0
+//               ? const Text("Rich in information and comprehensive in function")
+//               : index == 1
+//               ? const Text("Large characters and simple operations")
+//               : const Text("Selected content and time control"),
+//           onChanged: (value) {
+//             setState(() {
+//               _selectedMode = value!;
+//             });
+//           },
+//         );
+//       }),
+//     );
+//   }
+// }
 
 class PaymentSwitchTile extends StatefulWidget {
   const PaymentSwitchTile({super.key});
@@ -236,7 +240,38 @@ class AccountPrivacySettings extends StatelessWidget {
             context,
             "Delete Account",
             "Are you sure you want to delete your account?",
-                () {
+                () async {
+                  try {
+                    final user = FirebaseAuth.instance.currentUser;
+                    final uid = user?.uid;
+
+                    if (user != null && uid != null) {
+                      // 删除 Firestore 用户文档
+                      await FirebaseFirestore.instance.collection('users').doc(uid).delete();
+
+                      // 删除 Firebase Auth 账户
+                      await user.delete();
+
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text("Account deleted successfully."),
+                          duration: Duration(seconds: 2),
+                          backgroundColor: kPrimaryColor,
+                        ),
+                      );
+
+                      Navigator.of(context, rootNavigator: true)
+                          .pushNamedAndRemoveUntil("/sign_in", (route) => false);
+                    }
+                  } catch (e) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        content: Text("Failed to delete account: ${e.toString()}"),
+                        backgroundColor: Colors.red,
+                      ),
+                    );
+                  }
+              
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
                   content: Text("Account deleted successfully."),

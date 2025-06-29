@@ -43,6 +43,11 @@ dependencies:
   firebase_auth: ^5.6.0
   intl: ^0.20.2
   video_player: ^2.8.1
+  app_links: ^6.4.0
+  card_swiper: ^3.0.1
+  http: ^0.13.5
+  url_launcher: ^6.1.7
+
 
 dev_dependencies:
   flutter_test:

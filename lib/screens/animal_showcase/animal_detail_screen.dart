@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../models/animal_post.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 
 class AnimalDetailScreen extends StatefulWidget {
   final AnimalPost post;
@@ -448,10 +451,33 @@ class _AnimalDetailScreenState extends State<AnimalDetailScreen> {
         SizedBox(
           width: double.infinity,
           child: ElevatedButton(
-            onPressed: adoptedPressed ? null : () {
-              setState(() {
-                adoptedPressed = true;
-              });
+            onPressed: adoptedPressed? null: () async {
+                setState(() {
+                  adoptedPressed = true;
+                });
+
+                final user = FirebaseAuth.instance.currentUser;
+                if (user != null) {
+                  final uid = user.uid;
+                  final petName = post.species;
+
+                  await FirebaseFirestore.instance
+                      .collection('users')
+                      .doc(uid)
+                      .collection('notifications')
+                      .add({
+                    'type': 'adoption_request',
+                    'petName': petName,
+                    'timestamp': FieldValue.serverTimestamp(),
+                    'message': 'You requested to adopt $petName',
+                    'isRead': false, 
+                  });
+                }
+
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Adoption request submitted')),
+                );
+              
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: adoptedPressed ? Colors.grey : const Color(0xFFFF7643),
@@ -462,6 +488,7 @@ class _AnimalDetailScreenState extends State<AnimalDetailScreen> {
               ),
               elevation: 2,
             ),
+            
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

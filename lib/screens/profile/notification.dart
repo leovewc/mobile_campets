@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import '../adoption/adoption_form_screen.dart';
 
 class NotificationScreen extends StatelessWidget {
   static String routeName = "/notifications";
@@ -25,28 +28,76 @@ class NotificationScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent,
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: const [
-          NotificationCard(
-            title: "Price Drop Alert!",
-            message: "The price of the items you have saved has been reduced!",
-            time: "Just now",
-            icon: Icons.local_offer,
-          ),
-          NotificationCard(
-            title: "New Arrivals",
-            message: "New cat products are now available!",
-            time: "10 min ago",
-            icon: Icons.pets,
-          ),
-          NotificationCard(
-            title: "Profile Reminder",
-            message: "Please complete your personal information as soon as possible.",
-            time: "1 hour ago",
-            icon: Icons.person_outline,
-          ),
-        ],
+      
+      body: 
+      StreamBuilder<QuerySnapshot>(
+        stream: FirebaseFirestore.instance
+            .collection('users')
+            .doc(FirebaseAuth.instance.currentUser!.uid)
+            .collection('notifications')
+            .orderBy('timestamp', descending: true)
+            .snapshots(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
+            return const Center(child: Text("No notifications yet."));
+          }
+
+          final docs = snapshot.data!.docs;
+
+          return ListView.builder(
+            itemCount: docs.length,
+            itemBuilder: (context, index) {
+              final data = docs[index].data() as Map<String, dynamic>;
+              final petName = data['petName'] ?? 'Unknown';
+              final message = data['message'] ?? 'You have a new notification.';
+              final time = (data['timestamp'] as Timestamp?)?.toDate().toLocal().toString().split('.')[0] ?? 'Just now';
+
+              return Stack(
+                children: [
+                  ListTile(
+                    leading: const Icon(Icons.pets, color: Colors.orange),
+                    title: Text(petName, style: const TextStyle(fontWeight: FontWeight.bold)),
+                    subtitle: Text(message),
+                    trailing: Text(
+                      time,
+                      style: const TextStyle(fontSize: 12),
+                    ),
+                    onTap: () async {
+                      final docId = docs[index].id;
+                      final userId = FirebaseAuth.instance.currentUser!.uid;
+                      await FirebaseFirestore.instance
+                          .collection('users')
+                          .doc(userId)
+                          .collection('notifications')
+                          .doc(docId)
+                          .update({'isRead': true});
+
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => AdoptionFormScreen(petName: petName),
+                        ),
+                      );
+                    },
+                  ),
+                  if (data['isRead'] == false)
+                    const Positioned(
+                      top: 12,
+                      right: 16,
+                      child: CircleAvatar(
+                        radius: 5,
+                        backgroundColor: Colors.red,
+                      ),
+                    ),
+                ],
+              );
+            },
+          );
+        },
       ),
     );
   }

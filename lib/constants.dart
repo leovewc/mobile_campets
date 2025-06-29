@@ -20,6 +20,9 @@ const headingStyle = TextStyle(
 );
 
 const defaultDuration = Duration(milliseconds: 250);
+const Color cardBorder = Color(0xFFE5E7EB);
+
+const Color primaryAlt = Color(0xFF1E3A8A);
 
 // Form Error
 final RegExp emailValidatorRegExp =
