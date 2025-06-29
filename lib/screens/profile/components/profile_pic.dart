@@ -35,7 +35,7 @@ class _ProfilePicState extends State<ProfilePic> {
           CircleAvatar(
             backgroundImage: _image != null
                 ? FileImage(_image!) as ImageProvider
-                : AssetImage("assets/images/Profile Image.png"),
+                : AssetImage("assets/images/Profile_Cat.png"),
           ),
           Positioned(
             right: -16,
