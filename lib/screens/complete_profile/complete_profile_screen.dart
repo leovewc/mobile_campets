@@ -11,7 +11,7 @@ class CompleteProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sign Up'),
+        // title: const Text('Sign Up'),  // 删除标题
       ),
       body: SafeArea(
         child: SizedBox(
